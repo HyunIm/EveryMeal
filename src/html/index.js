@@ -1,6 +1,7 @@
 $(function() {
     set_daily_menu();
     set_date();
+    is_monday();
 });
 
 function set_daily_menu() {
@@ -19,4 +20,11 @@ function set_date() {
     let day = WEEK_DAY_KOR[today.getDay()];
 
     $("#todayDate").text(month + "월 " + date + "일 (" + day + ")")
+}
+
+function is_monday() {
+    let today = new Date();
+    if (today.getDay() == 1) {
+        $("#mondayAlert").addClass("show")
+    }
 }
