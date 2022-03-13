@@ -13,13 +13,10 @@ def image_cropping(name, rectangle):
 def execute_image_crop():
     print("execute_image_crop...")
     
-    image_cropping("week", (360, 480, 2220, 1090))
+    image_cropping("week", (335, 485, 2285, 1105))
 
-    image_cropping("mon", (360, 480, 730, 1090))
-    image_cropping("tue", (730, 480, 1130, 1090))
-    image_cropping("wed", (1135, 480, 1470, 1090))
-    image_cropping("thu", (1475, 480, 1845, 1090))
-    image_cropping("fri", (1845, 480, 2220, 1090))
-
-    image_cropping("division", (110, 480, 360, 1090))
-    image_cropping("date", (360, 165, 2220, 265))
+    image_cropping("mon", (360, 485, 750, 1100))
+    image_cropping("tue", (750, 485, 1165, 1100))
+    image_cropping("wed", (1165, 485, 1540, 1100))
+    image_cropping("thu", (1540, 485, 1900, 1100))
+    image_cropping("fri", (1900, 485, 2285, 1100))
