@@ -13,17 +13,20 @@ def image_cropping(name, rectangle):
 def execute_image_crop():
     print("execute_image_crop...")
 
-    a = 325
-    b = 725
-    c = 1130
-    d = 1515
+    a = 320
+    b = 715
+    c = 1125
+    d = 1510
     e = 1890
-    f = 2275
+    f = 2280
 
-    image_cropping("week", (a, 485, 2285, 1105))
+    top = 440
+    bottom = 1040
 
-    image_cropping("mon", (a, 485, b, 1100))
-    image_cropping("tue", (b, 485, c, 1100))
-    image_cropping("wed", (c, 485, d, 1100))
-    image_cropping("thu", (d, 485, e, 1100))
-    image_cropping("fri", (e, 485, f, 1100))
+    image_cropping("week", (a, top, f, bottom))
+
+    image_cropping("mon", (a, top, b, bottom))
+    image_cropping("tue", (b, top, c, bottom))
+    image_cropping("wed", (c, top, d, bottom))
+    image_cropping("thu", (d, top, e, bottom))
+    image_cropping("fri", (e, top, f, bottom))
