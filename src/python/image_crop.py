@@ -20,8 +20,8 @@ def execute_image_crop():
     e = 1890
     f = 2280
 
-    top = 440
-    bottom = 1080
+    top = 470
+    bottom = 1065
 
     image_cropping("week", (a, top, f, bottom))
 
