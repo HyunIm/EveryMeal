@@ -10,23 +10,32 @@ def image_cropping(name, rectangle):
         im_crop.save("../html/image/" + name + ".jpg")
 
 
-def execute_image_crop():
+def execute_image_crop(location):
     print("execute_image_crop...")
 
-    a = 320
-    b = 715
-    c = 1125
-    d = 1510
-    e = 1890
-    f = 2280
+    if location == '을지로':
+        mon = 320
+        tue = 715
+        wed = 1125
+        thu = 1510
+        fri = 1890
+        end = 2280
+        top = 470
+        bottom = 1065
+    elif location == '명동':
+        mon = 445
+        tue = 760
+        wed = 1080
+        thu = 1400
+        fri = 1720
+        end = 2040
+        top = 440
+        bottom = 980
 
-    top = 470
-    bottom = 1065
+    image_cropping("week", (mon, top, end, bottom))
 
-    image_cropping("week", (a, top, f, bottom))
-
-    image_cropping("mon", (a, top, b, bottom))
-    image_cropping("tue", (b, top, c, bottom))
-    image_cropping("wed", (c, top, d, bottom))
-    image_cropping("thu", (d, top, e, bottom))
-    image_cropping("fri", (e, top, f, bottom))
+    image_cropping("mon", (mon, top, tue, bottom))
+    image_cropping("tue", (tue, top, wed, bottom))
+    image_cropping("wed", (wed, top, thu, bottom))
+    image_cropping("thu", (thu, top, fri, bottom))
+    image_cropping("fri", (fri, top, end, bottom))
