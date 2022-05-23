@@ -30,7 +30,7 @@ def execute_image_crop(location):
         fri = 1720
         end = 2040
         top = 440
-        bottom = 980
+        bottom = 1010
 
     image_cropping("week", (mon, top, end, bottom))
 
