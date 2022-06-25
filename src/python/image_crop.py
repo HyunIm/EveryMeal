@@ -23,14 +23,14 @@ def execute_image_crop(location):
         top = 470
         bottom = 1065
     elif location == '명동':
-        mon = 455
-        tue = 765
+        mon = 430
+        tue = 755
         wed = 1080
-        thu = 1395
-        fri = 1710
-        end = 2030
-        top = 450
-        bottom = 965
+        thu = 1405
+        fri = 1735
+        end = 2065
+        top = 410
+        bottom = 970
 
     image_cropping("week", (mon, top, end, bottom))
 
